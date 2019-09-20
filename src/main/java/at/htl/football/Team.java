@@ -2,7 +2,12 @@ package at.htl.football;
 
 public class Team implements Comparable<Team> {
     private String name;
-    private int points, wins, draws, defeats, goalsShot, goalsReceived;
+    int points;
+    private int wins;
+    private int draws;
+    private int defeats;
+    private int goalsShot;
+    private int goalsReceived;
 
     public Team(String name) {
         this.name = name;

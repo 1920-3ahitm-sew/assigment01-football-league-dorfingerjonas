@@ -11,7 +11,7 @@ public class League {
         findOrCreateTeam(match.getGuestName()).addMatch(match);
     }
 
-    private static Team findOrCreateTeam(String teamName) {
+    protected static Team findOrCreateTeam(String teamName) {
         for (Team team : teams) {
             if (team.getName().equals(teamName)) {
                 return team;
